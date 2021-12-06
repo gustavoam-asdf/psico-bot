@@ -62,6 +62,7 @@ header {
   top: 80px;
   background-image: url(https://drive.google.com/uc?export=download&id=1ZOwIaNgbuhKo70hg3YXRBSu9Wsfq0EB8);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   max-width: 100%;
   max-height: 100%;
