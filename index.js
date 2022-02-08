@@ -1,7 +1,13 @@
 const $ = selector => document.querySelector(selector)
 const $$ = selector => document.querySelectorAll(selector)
 
-// setTimeout(() => {
+const dfMessenger = $('df-messenger')
+
+console.log(dfMessenger)
+console.log({ dfMessenger })
+
+// dfMessenger.addEventListener('df-messenger-loaded', evt => {
+//   console.log('Hola')
 //   let div
 //   const bot = $('df-messenger')
 //   div = bot.shadowRoot.querySelector('div')
@@ -13,4 +19,7 @@ const $$ = selector => document.querySelectorAll(selector)
 //   const input = div.querySelector('input')
 //   console.log(input)
 //   input.value = '¡Hola!'
-// }, 10 * 1000)
+// })
+dfMessenger.addEventListener('loaded', evt => {
+  dfMessenger.renderCustomText('Custom text')
+})
